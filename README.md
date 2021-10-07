@@ -17,8 +17,10 @@ To get started, go to your terminal and start the containers with:
 	mv .env.example .env
 	composer install
 	vendor/bin/sail up -d
-	
-Then you need to run the migrations	once and seed the database
+
+(On the first run give docker a little time to setup the database. Otherwise the following artisan
+commands may fail) 
+Then you need to run the migrations once and seed the database
 
 	vendor/bin/sail artisan config:cache
 	vendor/bin/sail artisan migrate
