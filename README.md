@@ -52,3 +52,4 @@ webservice response. Only use the positions that can be assigned to a known gpsd
 Please write the code that is needed to fulfill the task (Codestyle PSR-1 and PSR-2). We also expect your code to be covered by unittest
 (we use phpunit). 
 Please also include an indcation of how long it took to complete the task.
+You can submit your solution as a pullrequest or send the whole package back to us via email.
