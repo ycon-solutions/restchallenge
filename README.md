@@ -14,7 +14,7 @@ where his shipments are and what route they have taken.
 
 To get started, go to your terminal and start the containers with:
 
-	mv ./env.example .env
+	mv .env.example .env
 	composer install
 	vendor/bin/sail up -d
 	
