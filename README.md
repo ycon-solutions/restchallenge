@@ -14,7 +14,9 @@ where his shipments are and what route they have taken.
 
 To get started, go to your terminal and start the containers with:
 
-	vendor/bin/sail up
+	mv ./env.example .env
+	composer install
+	vendor/bin/sail up -d
 	
 Then you need to run the migrations	once and seed the database
 
