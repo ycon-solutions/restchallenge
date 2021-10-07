@@ -25,7 +25,7 @@ class ShipmentFactory extends Factory
         return [
             'shipment_number' => $this->faker->ean8(),
             'status' => $this->faker->randomElement([Shipment::SHIPMENT_STATUS_ACTIVE, Shipment::SHIPMENT_STATUS_DELIVERED]),
-            'gpsdevice_id' => $this->faker->->bothify('?##??#')
+            'gpsdevice_id' => $this->faker->bothify('?##??#')
         ];
     }
 }

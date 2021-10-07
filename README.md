@@ -20,6 +20,7 @@ To get started, go to your terminal and start the containers with:
 	
 Then you need to run the migrations	once and seed the database
 
+	vendor/bin/sail artisan config:cache
 	vendor/bin/sail artisan migrate
 	vendor/bin/sail artisan db:seed
 	
