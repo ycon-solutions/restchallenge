@@ -26,7 +26,7 @@ services:
     mysql:
         image: 'mysql:8.0'
         ports:
-            - '${FORWARD_DB_PORT:-3306}:3306'
+            - '${FORWARD_DB_PORT:-3307}:3306'
         environment:
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
             MYSQL_DATABASE: '${DB_DATABASE}'
@@ -34,7 +34,7 @@ services:
             MYSQL_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
         volumes:
-            - './_dockerdata/sailmysql:/var/lib/mysql'
+            - 'sailmysql:/var/lib/mysql'
         networks:
             - sail
         healthcheck:
