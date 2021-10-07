@@ -23,9 +23,9 @@ class ShipmentFactory extends Factory
     public function definition()
     {
         return [
-            'shipment_number' => $this->faker->text(255),
+            'shipment_number' => $this->faker->ean8(),
             'status' => $this->faker->randomElement([Shipment::SHIPMENT_STATUS_ACTIVE, Shipment::SHIPMENT_STATUS_DELIVERED]),
-            'gpsdevice_id' => $this->faker->text(255),
+            'gpsdevice_id' => $this->faker->->bothify('?##??#')
         ];
     }
 }
