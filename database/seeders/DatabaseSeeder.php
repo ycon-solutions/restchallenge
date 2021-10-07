@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         // Adding an admin user
         if( User::where('email','=','admin@admin.com')->count() < 1 ) {
-            User::create([
+            User::factory()->create([
                 'email' => 'admin@admin.com',
                 'password' => \Hash::make('admin'),
             ]);
