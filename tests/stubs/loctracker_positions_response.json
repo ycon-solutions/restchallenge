@@ -1,0 +1,42 @@
+{
+    "positions":[
+        {
+            "engineRPM": 714,
+            "fuelLevelTank1": 1055.0,
+            "fuelLevel": 1055.0,
+            "lng": 7.22222,
+            "heading": 180,
+            "odometerValueRaw": 116129487.0,
+            "deviceId": "NACNTX7E",
+            "ignitionState": "ON",
+            "speed": 0,
+            "vehRegNumber": "SCZ-56805",
+            "odometerValue": 580647.4,
+            "canFuelCounter": 170582,
+            "axis2Weight": 127,
+            "time": 1631961697539,
+            "axis1Weight": 17,
+            "lat": 48.11111
+        },
+        {
+            "engineRPM": 715,
+            "fuelLevelTank1": 1055.0,
+            "fuelLevel": 1055.0,
+            "lng": 7.222222,
+            "heading": 180,
+            "odometerValueRaw": 116129487.0,
+            "deviceId": "anotherId",
+            "ignitionState": "ON",
+            "speed": 0,
+            "vehRegNumber": "SCZ-56805",
+            "odometerValue": 580647.4,
+            "canFuelCounter": 170582,
+            "axis2Weight": 127,
+            "time": 1631961697539,
+            "axis1Weight": 17,
+            "lat": 48.11111
+        }
+    ],
+    "key": "ORWTvqxQsaavHjl8Z0dW4nppQxOgK5jZRe1kGRlm",
+    "status": 200
+}
