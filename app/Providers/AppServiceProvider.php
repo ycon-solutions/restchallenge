@@ -18,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrap();
 
+        // Binding the Localization interface with the current service in use
         $this->app->bind(
             LocalizationTrackerInterface::class,
             LocTrackerService::class

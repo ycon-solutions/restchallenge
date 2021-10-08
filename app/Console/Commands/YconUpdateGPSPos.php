@@ -1,11 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Console\Commands;
 
 use App\Models\Gpsposition;
-use App\Models\Shipment;
 use App\Services\Localization\LocalizationTrackerInterface;
-use DateTime;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 
