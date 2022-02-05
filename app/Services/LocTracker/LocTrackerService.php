@@ -5,7 +5,6 @@ namespace App\Services\LocTracker;
 use App\Models\Gpsposition;
 use App\Models\Shipment;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
 
 /**
  * Service to handle locTracker REST API
