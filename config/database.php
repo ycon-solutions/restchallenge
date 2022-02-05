@@ -91,6 +91,22 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'ddev' => [
+            'driver' => 'mysql',
+            'host' => 'db',
+            'port' => '3306',
+            'database' => 'db',
+            'username' => 'db',
+            'password' => 'db',
+            'unix_socket' => '',
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+        ],
+
     ],
 
     /*
