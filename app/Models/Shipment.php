@@ -22,4 +22,9 @@ class Shipment extends Model
     {
         return $this->hasMany(Gpsposition::class);
     }
+
+    public function scopeActive($query)
+    {
+        return $query->where('status', 'ACTIVE');
+    }
 }
