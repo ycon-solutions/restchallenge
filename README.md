@@ -17,10 +17,8 @@ To get started, go to your terminal and start the containers with:
 	mv .env.example .env
 	composer install
 	vendor/bin/sail up -d
-
-(On the first run give docker a little time to setup the database. Otherwise the following artisan
-commands may fail) 
-Then you need to run the migrations once and seed the database
+	
+Then you need to run the migrations	once and seed the database
 
 	vendor/bin/sail artisan config:cache
 	vendor/bin/sail artisan migrate
@@ -51,5 +49,5 @@ webservice response. Only use the positions that can be assigned to a known gpsd
 
 Please write the code that is needed to fulfill the task (Codestyle PSR-1 and PSR-2). We also expect your code to be covered by unittest
 (we use phpunit). 
-Please also include an indcation of how long it took to complete the task.
+Please also include an indication of how long it took to complete the task.
 You can submit your solution as a pullrequest or send the whole package back to us via email.

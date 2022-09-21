@@ -134,6 +134,6 @@ class ShipmentControllerTest extends TestCase
 
         $response->assertRedirect(route('shipments.index'));
 
-        $this->assertDeleted($shipment);
+        $this->assertModelMissing($shipment);
     }
 }

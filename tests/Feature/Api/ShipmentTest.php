@@ -93,7 +93,7 @@ class ShipmentTest extends TestCase
             route('api.shipments.destroy', $shipment)
         );
 
-        $this->assertDeleted($shipment);
+        $this->assertModelMissing($shipment);
 
         $response->assertNoContent();
     }
