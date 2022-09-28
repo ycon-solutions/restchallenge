@@ -77,4 +77,12 @@ class ShipmentGpspositionsTest extends TestCase
 
         $this->assertEquals($shipment->id, $gpsposition->shipment_id);
     }
+    
+    /**
+     * @test
+     */
+    public function test_console_command()
+    {
+        $this->artisan('shipmentposition')->assertSuccessful();
+    }
 }

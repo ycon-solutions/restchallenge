@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
+use App\Services\LocationTrackerService;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -15,6 +17,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         Paginator::useBootstrap();
+
+        $this->app->bind(LocationTrackerService::class, LocationTrackerService::class);
     }
 
     /**
